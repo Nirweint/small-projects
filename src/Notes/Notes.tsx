@@ -1,9 +1,9 @@
 import React from 'react';
 
-export const Timer = () => {
+export const Notes = () => {
     return (
         <div>
-            Hello
+            This will be notes app
         </div>
     );
-};
+}

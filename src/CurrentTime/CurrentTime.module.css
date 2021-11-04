@@ -1,0 +1,17 @@
+.timer {
+    background-color: #ffcf47;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    font-size: 52px;
+}
+
+.time {
+    font-size: 48px;
+    margin-left: 10px;
+}

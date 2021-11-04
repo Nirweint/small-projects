@@ -1,0 +1,12 @@
+.active {
+    background-color: #80baff;
+}
+
+.error {
+    border: 1px solid red;
+    outline: none;
+}
+
+.done {
+    opacity: .5;
+}

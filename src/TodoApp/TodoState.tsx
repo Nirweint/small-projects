@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import {v1} from "uuid";
 import {Todolist} from "./Todolist";
+import s from './TodoState.module.css'
 
 export type FilterValuesType = "all" | "active" | "completed";
 
@@ -53,8 +54,8 @@ export const TodoState = () => {
 
 
     return (
-        <div className="todo">
-            <Todolist title="What to learn"
+        <div className={s.todo}>
+            <Todolist title="Todo App"
                       tasks={tasksForTodolist}
                       removeTask={removeTask}
                       changeFilter={changeFilter}

@@ -1,5 +1,6 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 import {FilterValuesType} from "./TodoState";
+import s from './Todolist.module.css';
 
 type TaskType = {
     id: string
@@ -22,10 +23,11 @@ export function Todolist(props: PropsType) {
     let [title, setTitle] = useState("")
     const [error, setError] = useState(false)
 
-    const inputStyle = error ? "error" : ""
+    const inputStyle = error ? `${s.error}` : ""
     const errorMessage = error ? <div style={{color: "red"}}>message is require</div> : null
+
     const filterBtnStyle = (filterName: FilterValuesType) => {
-        return props.filter === filterName ? "active" : ""
+        return props.filter === filterName ? `${s.active}` : ""
     }
 
     const addTaskHandler = () => {
@@ -73,7 +75,7 @@ export function Todolist(props: PropsType) {
 
                     return <li
                         key={t.id}
-                        className={t.isDone ? "done" : ""}
+                        className={t.isDone ? `${s.done}` : ""}
                     >
                         <input
 
