@@ -1,5 +1,5 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
-import {FilterValuesType} from '../App';
+import {FilterValuesType} from "./TodoState";
 
 type TaskType = {
     id: string
@@ -56,7 +56,7 @@ export function Todolist(props: PropsType) {
     }
 
     return <div>
-        <h3>{props.title}</h3>
+        <h3 style={{margin: 0}}>{props.title}</h3>
         <div>
             <input
                 className={inputStyle}

@@ -1,11 +1,15 @@
-.App {
-  padding: 30px;
-  display: flex;
+body {
+  margin: 0;
 }
 
-.App > div {
-  margin-right: 50px;
+.app {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  height: 100vh;
 }
+
 
 .error {
   border: 1px solid red;
@@ -18,4 +22,12 @@
 
 .done {
   opacity: .5;
+}
+
+.links {
+  margin: 0 0 20px 20px;
+}
+
+.links a{
+  margin-right: 10px;
 }
