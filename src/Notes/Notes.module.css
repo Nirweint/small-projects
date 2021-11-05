@@ -1,0 +1,32 @@
+.notes {
+    display: flex;
+    justify-content: center;
+}
+
+.notesWrapper {
+    display: flex;
+    flex-direction: column;
+
+    max-width:  700px;
+
+    height: 100%;
+
+    margin-top: 40px;
+    min-width: 700px;
+    border: 1px solid #000;
+}
+
+.notesTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.deleteBtn {
+    cursor: pointer;
+}
+
+.deleteBtn:hover {
+    color: darkgreen;
+}

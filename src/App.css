@@ -20,4 +20,15 @@ body {
 
 .navbar a{
   margin-right: 10px;
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+}
+
+a.active {
+  color: #000;
+  background-color: white;
+  border-radius: 5px;
+
 }

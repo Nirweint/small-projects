@@ -1,0 +1,40 @@
+.note {
+    width: 700px;
+    background-color: #f9f8f9;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #edeced;
+}
+
+.text {
+    min-height: 500px;
+    padding: 5px;
+}
+
+.checkBtn {
+    color: green;
+    margin-right: 5px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.checkBtn:hover {
+    color: limegreen;
+}
+
+.trashBtn {
+    cursor: pointer;
+    color: darkred;
+
+    transition: 0.3s;
+}
+
+.trashBtn:hover {
+    color: red;
+}

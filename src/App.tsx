@@ -4,9 +4,11 @@ import './App.css';
 import {TodoState} from "./TodoApp/TodoState";
 import {Home} from "./Home";
 import {CurrentTime} from "./CurrentTime/CurrentTime";
+import {Notes} from "./Notes/Notes";
 
 
 function App() {
+
 
     return (
         <div className={'app'}>
@@ -19,14 +21,18 @@ function App() {
                         <TodoState/>
                     </Route>
                     <Route path={"/time"}>
-                        <CurrentTime/>
+                    <CurrentTime/>
+                </Route>
+                    <Route path={"/notes"}>
+                        <Notes/>
                     </Route>
                 </Switch>
             </div>
             <div className={'navbar'}>
-                <NavLink to={"/"}>Home</NavLink>
-                <NavLink to={"/todoapp"}>TodoApp</NavLink>
-                <NavLink to={"/time"}>Timer</NavLink>
+                <NavLink exact={true} activeClassName={'active'} to={"/"}>Home</NavLink>
+                <NavLink activeClassName={'active'} to={"/todoapp"}>TodoApp</NavLink>
+                <NavLink activeClassName={'active'} to={"/time"}>Timer</NavLink>
+                <NavLink activeClassName={'active'} to={"/notes"}>Notes</NavLink>
             </div>
         </div>
     )
